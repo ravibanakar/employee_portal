@@ -1,32 +1,36 @@
 package com.emp.model;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
+
 import lombok.Data;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+import org.springframework.data.mongodb.core.mapping.Field;
 
-import java.util.Comparator;
 
+@Document(collection = "employee")
 @Data
-public class Employee implements Comparable<Employee>  {
+public class Employee  {
 
-    @JsonProperty("employee_id")
+    @Id
+    @Field("_id")
+    private String id;
+
+    @Field ("employee_id")
     private Integer employeeId;
-    @JsonProperty("first_name")
+
+    @Field("first_name")
     private String firstName;
-    @JsonProperty("last_name")
+
+    @Field("last_name")
     private String lastName;
-    @JsonProperty("gender")
+
+    @Field("gender")
     private String gender;
-    @JsonProperty("date_of_birth")
+
+    @Field("date_of_birth")
     private String dob;
-    @JsonProperty("department")
+
+    @Field("department")
     private String dept;
-
-    public int compareTo(Employee employee) {
-        return Comparator
-                .comparing(Employee::getDept)
-                .thenComparing(Employee::getFirstName)
-                .thenComparing(Employee::getLastName)
-                .compare(this, employee);
-    }
-
+    
 }
