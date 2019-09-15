@@ -20,5 +20,5 @@ Example object for registering an employee:
 }
 
 Steps to Run the application
-gradlew clean build
-java -jar build\libs\employee_portal-1.0.jar
+- gradlew clean build
+- java -jar build\libs\employee_portal-1.0.jar
