@@ -24,6 +24,7 @@ public class EmployeeService {
     private EmployeeRepository employeeRepository;
 
     /**
+     * This method will register the new employee in the system
      *
      * @param employeeVo
      * @return
@@ -34,7 +35,7 @@ public class EmployeeService {
     }
 
     /**
-     * This service method will return the list of all employees
+     * This service method will return the list of all employees from the repository
      *
      * @return
      */
@@ -49,6 +50,11 @@ public class EmployeeService {
         return employeeList;
     }
 
+    /**
+     *
+     * @param employeeVo
+     * @return
+     */
     private Employee populateEmployee(EmployeeVo employeeVo) {
         Employee employee = new Employee();
         try {
@@ -61,6 +67,11 @@ public class EmployeeService {
         return employee;
     }
 
+    /**
+     *
+     * @param employee
+     * @return
+     */
     private EmployeeVo populateEmployeeVo(Employee employee) {
         EmployeeVo employeeVo = new EmployeeVo();
         try {
