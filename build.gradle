@@ -1,8 +1,24 @@
+
+buildscript {
+    repositories {
+        mavenCentral()
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:2.1.8.RELEASE")
+    }
+}
+
+plugins {
+    id 'java'
+    id 'idea'
+    id 'org.springframework.boot' version '2.1.8.RELEASE'
+}
+
 group 'employee_portal'
 version '1.0'
-
-apply plugin: 'java'
-apply plugin: 'idea'
 
 sourceCompatibility = 1.8
 
