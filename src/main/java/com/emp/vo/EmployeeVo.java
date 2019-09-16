@@ -29,16 +29,14 @@ public class EmployeeVo implements Comparable<EmployeeVo>  {
     private String dept;
 
     /**
-     * Sort the Employees based on Department, First Name, Last Name
+     * Sort the Employees based on First Name
      *
      * @param employee
      * @return
      */
     public int compareTo(EmployeeVo employee) {
         return Comparator
-                .comparing(EmployeeVo::getDept)
-                .thenComparing(EmployeeVo::getFirstName)
-                .thenComparing(EmployeeVo::getLastName)
+                .comparing(EmployeeVo::getFirstName)
                 .compare(this, employee);
     }
 

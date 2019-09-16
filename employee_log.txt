@@ -105,3 +105,7 @@ INFO    2019-09-16 20:54:52,949 [http-nio-8080-exec-5] com.emp.service.EmployeeS
 INFO    2019-09-16 20:55:35,498 [Test worker] com.emp.service.EmployeeService  - employee.size=1
 INFO    2019-09-16 20:56:35,692 [main] com.emp.service.EmployeeService  - employee.size=1
 INFO    2019-09-16 20:57:00,398 [http-nio-8080-exec-1] com.emp.service.EmployeeService  - employee.size=6
+INFO    2019-09-16 21:10:53,842 [Test worker] com.emp.service.EmployeeService  - employee.size=1
+INFO    2019-09-16 21:12:26,424 [Test worker] com.emp.service.EmployeeService  - employee.size=1
+INFO    2019-09-16 21:21:11,323 [Test worker] com.emp.service.EmployeeService  - employee.size=1
+INFO    2019-09-16 21:22:04,754 [http-nio-8080-exec-1] com.emp.service.EmployeeService  - employee.size=6
