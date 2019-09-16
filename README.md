@@ -7,7 +7,7 @@
   - Gender
   - Date of Birth
   - Department
-2) Get all the employees in Department, Employee Name order
+2) Get all the employeee order by First Name
 
 Example object for registering an employee:
 {
